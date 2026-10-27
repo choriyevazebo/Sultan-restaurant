@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sulton Saroy | Milliy va Yevropa Taomlari Restorani</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- 1. Header & Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-utensils"></i> Sulton<span>Saroy</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Bosh sahifa</a>
+        <a href="#about" class="nav-link">Biz haqimizda</a>
+        <a href="#menu" class="nav-link">Menyu</a>
+        <a href="#booking" class="nav-btn">Stol bron qilish</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menyu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <span class="badge">Unutilmas Ta'mlar Maskani</span>
+      <h1 class="hero-title">Shinam muhit va eng lazzatli taomlar</h1>
+      <p class="hero-desc">
+        Oilaviy kechki ovqat, do'stlar bilan uchrashuv yoki tantanali tadbirlar uchun eng yaxshi maskan. 
+        Oldindan stol bron qiling va navbatsiz rohatlaning.
+      </p>
+      <div class="hero-btns">
+        <a href="#booking" class="btn btn-primary">
+          <i class="fa-solid fa-calendar-check"></i> Stol bron qilish
+        </a>
+        <a href="#menu" class="btn btn-secondary">
+          <i class="fa-solid fa-book-open"></i> Menyuni ko'rish
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Features Section -->
+  <section class="features" id="about">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>Tajribali Oshpazlar</h3>
+          <p>10 yildan ortiq tajribaga ega mohir oshpazlarimizdan sarxil taomlar.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3>Tabiiy Masalliqlar</h3>
+          <p>Har tong yetkazib beriladigan 100% yangi va sifatli mahsulotlar.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-music"></i></div>
+          <h3>Jonli Musiqa</h3>
+          <p>Har oqshom xushovoz xonandalar va sokin jonli musiqiy dastur.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-shield-heart"></i></div>
+          <h3>A'lo Darajadagi Xizmat</h3>
+          <p>Samimiy xodimlar va har bir mehmonga alohida ehtirom.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Interactive Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Mazali Tanlov</span>
+        <h2>Bizning Menyuyimiz</h2>
+        <p>Eng sara milliy va Yevropa taomlari to'plami</p>
+      </div>
+
+      <!-- Categories Filter Tabs -->
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-category="all">Barchasi</button>
+        <button class="tab-btn" data-category="main">Asosiy Taomlar</button>
+        <button class="tab-btn" data-category="drinks">Ichimliklar</button>
+        <button class="tab-btn" data-category="desserts">Shirinliklar</button>
+      </div>
+
+      <!-- Food Cards Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Taom 1 -->
+        <div class="menu-card" data-category="main">
+          <div class="menu-img-wrap">
+            <img src="https://cdn.zoomda.uz/products/2025/12/02/1764683227837861554.webp" alt="To'y Oshi">
+            <span class="price-tag">55 000 so'm</span>
+          </div>
+          <div class="menu-info">
+            <h3>Maxsus To'y Oshi</h3>
+            <p>Devzira guruch, lahm mol go'shti, bedana tuxumi va mayiz bilan.</p>
+          </div>
+        </div>
+
+        <!-- Taom 2 -->
+        <div class="menu-card" data-category="main">
+          <div class="menu-img-wrap">
+            <img src="https://plovlviv.com/site/menu/shashlik-z-baranini-kuskovii-200-g-1.webp">
+            <span class="price-tag">45 000 so'm</span>
+          </div>
+          <div class="menu-info">
+            <h3>Qo'y Go'shti Shashlik</h3>
+            <p>Yumshoq marinadlangan qo'y go'shti, piyoz va sous bilan.</p>
+          </div>
+        </div>
+
+        <!-- Taom 3 -->
+        <div class="menu-card" data-category="main">
+          <div class="menu-img-wrap">
+            <img src="https://thesageapron.com/wp-content/uploads/2022/07/Grilled-Ribeye-7.jpg">
+            <span class="price-tag">120 000 so'm</span>
+          </div>
+          <div class="menu-info">
+            <h3>Ribeye Steyk</h3>
+            <p>Olovda qovurilgan maxsus mol go'shti, sabzavotli garnir bilan.</p>
+          </div>
+        </div>
+
+        <!-- Taom 4 -->
+        <div class="menu-card" data-category="drinks">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Yalpizli Limonad">
+            <span class="price-tag">25 000 so'm</span>
+          </div>
+          <div class="menu-info">
+            <h3>Klassik Mojito</h3>
+            <p>Yangi yalpiz barglari, laym sharbati, muz va gazli suv.</p>
+          </div>
+        </div>
+
+        <!-- Taom 5 -->
+        <div class="menu-card" data-category="drinks">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Meva choyi">
+            <span class="price-tag">30 000 so'm</span>
+          </div>
+          <div class="menu-info">
+            <h3>Maxsus Zanjabil va Meva Choyi</h3>
+            <p>Asal, limon, zanjabil va tog' giyohlari bilan tayyorlangan damlama.</p>
+          </div>
+        </div>
+
+        <!-- Taom 6 -->
+        <div class="menu-card" data-category="desserts">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=600&q=80" alt="Tiramisu">
+            <span class="price-tag">38 000 so'm</span>
+          </div>
+          <div class="menu-info">
+            <h3>Italyancha Tiramisu</h3>
+            <p>Mascarpone kremi, kofe va kakao bilan boyitilgan nafis desert.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Booking / Reservation Form Section -->
+  <section class="booking-section" id="booking">
+    <div class="container">
+      <div class="booking-wrapper">
+        <div class="booking-text">
+          <span class="sub-title">Joyingizni Band Qiling</span>
+          <h2>Stol Bron Qilish</h2>
+          <p>
+            Shinam xonalardan yoki umumiy zaldan o'zingizga qulay joyni oldindan band qiling.
+            Formani to'ldirishingiz bilan menejerimiz siz bilan 5 daqiqada bog'lanadi!
+          </p>
+          <ul class="booking-perks">
+            <li><i class="fa-solid fa-circle-check"></i> Oldindan bepul buyurtma</li>
+            <li><i class="fa-solid fa-circle-check"></i> Maxsus tadbirlar uchun bepul bezatish</li>
+            <li><i class="fa-solid fa-circle-check"></i> Tug'ilgan kun sohiblariga 10% chegirma</li>
+          </ul>
+        </div>
+
+        <div class="booking-form-card">
+          <form id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Ism va Familiya <span class="required">*</span></label>
+                <div class="input-icon-wrap">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="fullName" name="fullName" placeholder="Ali Valiyev" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telefon Raqam <span class="required">*</span></label>
+                <div class="input-icon-wrap">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guests">Mehmonlar Soni <span class="required">*</span></label>
+                <div class="input-icon-wrap">
+                  <i class="fa-solid fa-users"></i>
+                  <select id="guests" name="guests" required>
+                    <option value="" disabled selected>Tanlang...</option>
+                    <option value="1-2 kishi">1-2 kishi</option>
+                    <option value="3-5 kishi">3-5 kishi</option>
+                    <option value="6-10 kishi">6-10 kishi</option>
+                    <option value="10+ kishi (Banket)">10+ kishi (Katta tadbir)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingDate">Sana va Vaqt <span class="required">*</span></label>
+                <div class="input-icon-wrap">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <input type="datetime-local" id="bookingDate" name="bookingDate" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="comment">Qo'shimcha Istaklar (ixtiyoriy)</label>
+              <textarea id="comment" name="comment" rows="3" placeholder="Masalan: Deraza yonidagi tinch stol, bolalar uchun stulcha kerak..."></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn btn-submit">
+              <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Bron Qilish</span>
+              <span class="btn-loader" style="display: none;"><i class="fa-solid fa-spinner fa-spin"></i> Yuborilmoqda...</span>
+            </button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-utensils"></i> Sulton<span>Saroy</span>
+        </a>
+        <p>Toshkent shahrining eng shinam va nufuzli restoranlaridan biri.</p>
+      </div>
+      <div class="footer-contacts">
+        <h4>Bog'lanish</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Toshkent sh., Chilonzor tumani, 5-mavze</p>
+        <p><i class="fa-solid fa-phone"></i> +998 (71) 200-00-00</p>
+        <p><i class="fa-solid fa-clock"></i> Har kuni: 10:00 - 23:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sulton Saroy. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
